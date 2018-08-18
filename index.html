@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Seminar Skripsi</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- set theme -->
+		<link rel="stylesheet" href="css/theme/league.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+			section {
+				/*color: #d29d4b;*/
+				color: lightblue;
+			}
+
+			p {
+				text-align: justify;
+			}
+		</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- 1 -->
+			<section style="font-weight:bold;">
+				<div class="fragment fade-left" data-autoslide="500" data-fragment-index="3">MUHAMMAD ARFANI HIDAYAT</div>
+				<div class="fragment fade-down" data-autoslide="500" data-fragment-index="2">NIM : 1610550015</div>
+				<div class="fragment fade-up" data-fragment-index="4">S1 TEKNIK INFORMATIKA</div>
+				<div class="fragment grow" data-autoslide="5000" data-fragment-index="1" style="color:#09a;">TEKNIK KOMPUTER & JARINGAN</div>
+				<!-- <div class="shrink-in">
+					<img src="img/logo-stmik.png" alt="Logo STMIK BG" style="width: 150px; height: 150px">
+				</div> -->
+			</section>
+
+			<!-- 2 -->
+			<section>
+				<div class="fragment fade-up" data-autoslide="1000">
+					<h3 class="fragment grow">Judul Skripsi</h3>
+				</div>
+				<blockquote class="fragment fade-down" data-autoslide="500" data-fragment-index="2" style="width:100%;">
+					Pengembangan program aplikasi reservasi hotel untuk generate voucher internet otomatis dalam bentuk QR code menggunakan MikroTik RouterOS API di <a href="http://www.jazzsenggigihotel.com">Jazz Senggigi Hotel</a>
+				</blockquote>
+			</section>
+
+			<!-- 3 -->
+			<section>
+				<section>
+					<div class="fragment fade-up" data-autoslide="1000">
+						<h3 class="fragment grow">Sistem berjalan</h3>
+					</div>
+						<p class="fragment fade-down" data-fragment-index="1" data-autoslide="500">Voucher internet digenerate secara manual dalam jumlah yang banyak dan kemudian diberikan satu persatu kepada tamu hotel</p>
+				</section>
+			</section>
+
+			<!-- 4 -->
+			<section>
+				<h3 class="fragment grow" data-autoslide="1000">Kendala</h3>
+				<ol>
+					<li class="fragment fade-right">Menghambat layanan akses internet untuk tamu hotel</li>
+					<li class="fragment fade-down">Username dan password sulit diingat</li>
+					<li class="fragment fade-down">Tidak Efektif & Tidak Efisien</li>
+				</ol>
+				<aside class="notes">
+					<ol>
+						<li>
+							Saat voucher limited atau habis, pihak hotel harus memanggil teknisi jaringan untuk generate voucher baru. Masalahnya adalah Jazz Senggigi Hotel tidak memiliki teknisi jaringan tetap, jadi teknisi yang dipergunakan adalah teknisi berstatus <strong>freelance</strong>. Saat hotel membutuhkan teknisi tersebut, sering teknisi-nya tidak dapat membantu karena kesibukan pribadi yang menyebabkan layanan internet untuk tamu hotel terhambat. (info terakhir voucher yang digenerate tidak digunakan karena bermasalah, jadi digunakan username dan password yang shared user nya banyak yang dikhususkan untuk karyawan hotel)
+						</li>
+						<li>
+							Jika kehilangan voucher maka harus lapor dan minta voucher baru ke front office atau receptionist
+						</li>
+						<li>
+							Sulit menentukan masa aktif voucher nya, harus generate voucher dalam jumlah besar karena harus mengikuti lama menginap tamu misal 1 hari, 2 hari, 3 hari, dst..
+						</li>
+					</ol>
+				</aside>
+			</section>
+
+			<!-- 5 -->
+			<section>
+				<h3 class="fragment grow" data-autoslide="1000">Sistem yang diinginkan</h3>
+					<li class="fragment zoom-in">Sistem generate voucher otomatis</li>
+				<li class="fragment fade-down">Username dan password berupa data pribadi tamu yang dapat di-costume</li>
+			</section>
+
+			<!-- 6 -->
+			<section>
+				<!-- 6.1 -->
+				<section>
+					<h3>Sistem yang dibangun</h3>
+					<a href="#" class="navigate-down">
+						<i style="font-size:80px;" class="fa fa-arrow-down"></i>
+					</a>
+				</section>
+				<!-- 6.2 -->
+				<section>
+					<h5>1</h5>
+					<i class="fa fa-check-square" aria-hidden="true"></i>
+					<strong>
+						Sistem generate voucher otomatis saat tamu melakukan reservasi
+					</strong>
+					<br />
+					<a href="#" class="navigate-down">
+						<i class="fa fa-arrow-down"></i>
+					</a>
+				</section>
+				<!-- 6.3 -->
+				<section>
+					<h5>2</h5>
+					<i class="fa fa-check-square" aria-hidden="true"></i>
+					<strong>
+						Username dan password berupa data pribadi tamu yang dapat di-costume
+					</strong>
+					<br />
+					<a href="#" class="navigate-down">
+						<i class="fa fa-arrow-down"></i>
+					</a>
+				</section>
+				<!-- 6.4 -->
+					<section>
+						<h5>3</h5>
+						<i class="fa fa-check-square" aria-hidden="true"></i>
+					<strong>
+						QR Code Support
+					</strong>
+					<br />
+					<a href="#" class="navigate-down">
+						<i class="fa fa-arrow-down"></i>
+					</a>
+				</section>
+				<!-- 6.5 -->
+					<section>
+						<h5>4</h5>
+						<i class="fa fa-check-square" aria-hidden="true"></i>
+					<strong>
+						Masa aktif voucher sesuai lama tamu menginap
+					</strong>
+					<br />
+					<a href="#" class="navigate-down">
+						<i class="fa fa-arrow-down"></i>
+					</a>
+				</section>
+				<!-- 6.6 -->
+					<section>
+						<h5>5</h5>
+						<i class="fa fa-check-square" aria-hidden="true"></i>
+					<strong>
+						Shared user sesuai jumlah tamu menginap per kamar
+					</strong>
+					<br />
+					<a href="#" class="navigate-down">
+						<i class="fa fa-arrow-down"></i>
+					</a>
+				</section>
+				<!-- 6.7 -->
+					<section>
+						<h5>6</h5>
+						<i class="fa fa-check-square" aria-hidden="true"></i>
+					<strong>
+						Special speed internet access untuk tamu special
+					</strong>
+					<br />
+					<a href="#" class="navigate-down">
+						<i class="fa fa-arrow-down"></i>
+					</a>
+				</section>
+				<!-- 6.8 -->
+					<section>
+						<h5>7</h5>
+						<i class="fa fa-check-square" aria-hidden="true"></i>
+					<strong>
+						Masa aktif habis otomatis saat tamu checkout hotel
+					</strong>
+					<br />
+					<a href="#" class="navigate-down">
+						<i class="fa fa-arrow-down"></i>
+					</a>
+				</section>
+				<!-- 6.9 -->
+					<section>
+						<h5>8</h5>
+						<i class="fa fa-check-square" aria-hidden="true"></i>
+					<strong>
+						Masa aktif otomatis diperpanjang saat tamu memperpanjang waktu inap sesuai perpanjangan (extend)
+					</strong>
+					<br />
+					<a href="#" class="navigate-down">
+						<i class="fa fa-arrow-down"></i>
+					</a>
+				</section>
+				<!-- 6.10 -->
+					<section>
+						<h5>9</h5>
+						<i class="fa fa-check-square" aria-hidden="true"></i>
+					<strong>
+						Speed internet access costumizable ( Dapat diatur sesuai tipe kamar sesuai kebijakan hotel )
+					</strong>
+					<br />
+					<a href="#" class="navigate-down">
+						<i class="fa fa-arrow-down"></i>
+					</a>
+				</section>
+				<!-- 6.11 -->
+					<section>
+						<h5>10</h5>
+						<i class="fa fa-check-square" aria-hidden="true"></i>
+					<strong>
+						Walled Garden Support
+
+					</strong>
+				</section>
+			</section>
+			<!-- closed sixth slide -->
+
+			<!-- 7 -->
+			<section data-background-iframe="http://localhost/jazz" data-background-interactive>
+				<p><strong>DEMO!</strong></p>
+			</section>
+
+			<!-- 8 -->
+			<section>
+				<h3 class="fragment fade-up" data-autoslide="1000">Manfaat</h3>
+				<ol>
+					<li class="fragment fade-down">Mengurangi kemungkinan terhambatnya layanan akses internet untuk tamu hotel</li>
+					<li class="fragment fade-down">Username dan Password mudah diingat oleh masing-masing tamu hotel</li>
+					<li class="fragment fade-down">Lebih efektif dan efisien</li>
+					<li class="fragment fade-down">Memudahkan tamu untuk login dengan QR code</li>
+					<li class="fragment fade-down">Keamanan lebih baik karena menggunakan username dan password dengan data pribadi</li>
+					<li class="fragment fade-down">Tidak lagi membutuhkan teknisi (freelance) untuk  generate voucher</li>
+				</ol>
+			</section>
+
+			<!-- 9 / lastest -->
+			<section>
+				<h1 style="display:inline; margin-right:20px;">Thanks</h1>
+				<img src="img/logo-stmik.png" alt="Logo STMIK BG" style="width: 100px; height: 100px; margin:0px;">
+				<textarea style="width: 100%; font-size: 20px; background-color: lightblue; padding: 10px; border-radius: 10px 10px;" name="masukkan" rows="6" cols="100" placeholder="Note"></textarea>
+				<div style="font-size:24px; font-weight:bold;">
+					<div class="fragment fade-left" data-autoslide="500" data-fragment-index="3">MUHAMMAD ARFANI HIDAYAT</div>
+					<div class="fragment fade-down" data-autoslide="500" data-fragment-index="2">NIM : 1610550015</div>
+					<div class="fragment fade-up" data-fragment-index="4">S1 TEKNIK INFORMATIKA</div>
+					<div class="fragment grow" data-autoslide="5000" data-fragment-index="1" style="color:#09a;">TEKNIK KOMPUTER & JARINGAN</div>
+				</div>
+			</section>
+			<!-- End -->
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			// showNotes:true,
+
+			//set slide transition (default is slide), options = none, fade, slide, convex, concave, zoom
+			transition: 'convex',
+
+			//nav controls false
+			// controls: false,
+
+			controlsTutorial: true,
+
+			//position of controls
+			controlsLayout: 'bottom-right',
+
+			// Stop auto-sliding after user input
+			autoSlideStoppable: false,
+
+			dependencies: [
+				// Zoom in and out with Alt+click
+				{
+					src: 'plugin/zoom-js/zoom.js',
+					async: true
+				},
+				{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function() {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+
+		// Slide every five seconds
+		// Reveal.configure({
+		// 	autoSlide: 5000
+		// });
+		// here to set in individual slide
+		// data-autoslide="2000"
+
+		Reveal.configure({
+			keyboard: {
+				13: 'next', // go to the next slide when the ENTER key is pressed
+				// 27: function() {}, // do something custom when ESC is pressed
+				32: null // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)
+			},
+			backgroundTransition: 'zoom'
+		});
+	</script>
+</body>
+
+</html>
