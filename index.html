@@ -1,41 +1,43 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Seminar Skripsi</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<!-- set theme -->
-		<link rel="stylesheet" href="css/theme/league.css">
-		<link rel="stylesheet" href="css/animate.min.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
+	<title>Seminar Skripsi</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<!-- set theme -->
+	<link rel="stylesheet" href="css/theme/league.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 
-		<style>
-			section {
-				/*color: #d29d4b;*/
-				color: lightblue;
-			}
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
-			p {
-				text-align: justify;
-			}
-		</style>
+	<style>
+		section {
+			/*color: #d29d4b;*/
+			color: lightblue;
+		}
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
+		p {
+			text-align: justify;
+		}
+	</style>
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
 	<div class="reveal">
 		<div class="slides">
 			<!-- 1 -->
@@ -54,6 +56,18 @@
 				<blockquote class="fragment fade-down" data-autoslide="500" data-fragment-index="2" style="width:100%;">
 					Pengembangan program aplikasi reservasi hotel untuk generate voucher internet otomatis dalam bentuk QR code menggunakan MikroTik RouterOS API di <a href="http://www.jazzsenggigihotel.com">Jazz Senggigi Hotel</a>
 				</blockquote>
+
+				<aside class="notes">
+					<ul>
+						<li>Judul skripsi sy adalah <span style="color:red">BACA ISI JUDUL</span></li>
+					</ul>
+					<h3 style="color: red;">BACA SETELAH BACA ISI JUDUL</h3>
+					<ul>
+						<li>
+							Skripsi yang sy angkat ini berkaitan dengan pelayanan hotel terhadap tamu hotel untuk akses internet
+						</li>
+					</ol>
+				</aside>
 			</section>
 
 			<!-- 3 -->
@@ -62,7 +76,16 @@
 					<div class="fragment fade-up" data-autoslide="1000">
 						<h3 class="fragment grow">Sistem berjalan</h3>
 					</div>
-						<p class="fragment fade-down" data-fragment-index="1" data-autoslide="500">Voucher internet digenerate secara manual dalam jumlah yang banyak dan kemudian diberikan satu persatu kepada tamu hotel</p>
+					<p class="fragment fade-down" data-fragment-index="1" data-autoslide="500">Voucher internet digenerate secara manual menggunakan mikrotik dalam jumlah yang banyak dan kemudian diberikan satu persatu kepada tamu hotel yang melakukan reservasi</p>
+
+					<aside class="notes">
+						<h3 style="color: red;">BACA SEBELUM BACA ISI</h3>
+						<ul>
+							<li>
+								Sistem yang sedang berjalan ditempat penelitian sy masih dengan metode generate manual yaitu dengan cara <span style="color:red">BACA ISI</span>
+							</li>
+						</ol>
+					</aside>
 				</section>
 			</section>
 
@@ -75,15 +98,18 @@
 					<li class="fragment fade-down">Tidak Efektif & Tidak Efisien</li>
 				</ol>
 				<aside class="notes">
+					<h3> Berikut adalah kendala-kendala yang terjadi saat sistem yang sedang berjalan di tempat penelitian sy diaplikasikan</h3>
 					<ol>
-						<li>
-							Saat voucher limited atau habis, pihak hotel harus memanggil teknisi jaringan untuk generate voucher baru. Masalahnya adalah Jazz Senggigi Hotel tidak memiliki teknisi jaringan tetap, jadi teknisi yang dipergunakan adalah teknisi berstatus <strong>freelance</strong>. Saat hotel membutuhkan teknisi tersebut, sering teknisi-nya tidak dapat membantu karena kesibukan pribadi yang menyebabkan layanan internet untuk tamu hotel terhambat. (info terakhir voucher yang digenerate tidak digunakan karena bermasalah, jadi digunakan username dan password yang shared user nya banyak yang dikhususkan untuk karyawan hotel)
+						<li> <span style="color: red">BACA POINT 1</span>
+							Saat voucher limited atau habis, pihak hotel harus memanggil teknisi jaringan untuk generate voucher baru. Masalahnya adalah Jazz Senggigi Hotel tidak memiliki teknisi jaringan tetap, jadi teknisi yang dipergunakan adalah teknisi berstatus <strong>freelance</strong>.
+							Saat hotel membutuhkan teknisi tersebut, sering teknisi-nya tidak dapat membantu karena kesibukan pribadi yang menyebabkan layanan internet untuk tamu hotel terhambat. (info terakhir voucher yang digenerate tidak digunakan karena bermasalah, jadi
+							digunakan username dan password yang shared user nya banyak yang dikhususkan untuk karyawan hotel)
 						</li>
-						<li>
-							Jika kehilangan voucher maka harus lapor dan minta voucher baru ke front office atau receptionist
+						<li> <span style="color: red">BACA POINT 2</span>
+							Jadi jika kehilangan voucher maka harus lapor dan minta voucher baru ke front office atau receptionist
 						</li>
-						<li>
-							Sulit menentukan masa aktif voucher nya, harus generate voucher dalam jumlah besar karena harus mengikuti lama menginap tamu misal 1 hari, 2 hari, 3 hari, dst..
+						<li> <span style="color: red">BACA POINT 3</span>
+							Dalam menentukan masa aktif voucher yang akan digenerate, harus generate voucher dalam jumlah besar karena harus mengikuti lama menginap tamu misal 1 hari, 2 hari, 3 hari, dst..
 						</li>
 					</ol>
 				</aside>
@@ -92,7 +118,7 @@
 			<!-- 5 -->
 			<section>
 				<h3 class="fragment grow" data-autoslide="1000">Sistem yang diinginkan</h3>
-					<li class="fragment zoom-in">Sistem generate voucher otomatis</li>
+				<li class="fragment zoom-in">Sistem generate voucher yang otomatis</li>
 				<li class="fragment fade-down">Username dan password berupa data pribadi tamu yang dapat di-costume</li>
 			</section>
 
@@ -130,9 +156,9 @@
 					</a>
 				</section>
 				<!-- 6.4 -->
-					<section>
-						<h5>3</h5>
-						<i class="fa fa-check-square" aria-hidden="true"></i>
+				<section>
+					<h5>3</h5>
+					<i class="fa fa-check-square" aria-hidden="true"></i>
 					<strong>
 						QR Code Support
 					</strong>
@@ -142,9 +168,9 @@
 					</a>
 				</section>
 				<!-- 6.5 -->
-					<section>
-						<h5>4</h5>
-						<i class="fa fa-check-square" aria-hidden="true"></i>
+				<section>
+					<h5>4</h5>
+					<i class="fa fa-check-square" aria-hidden="true"></i>
 					<strong>
 						Masa aktif voucher sesuai lama tamu menginap
 					</strong>
@@ -154,9 +180,9 @@
 					</a>
 				</section>
 				<!-- 6.6 -->
-					<section>
-						<h5>5</h5>
-						<i class="fa fa-check-square" aria-hidden="true"></i>
+				<section>
+					<h5>5</h5>
+					<i class="fa fa-check-square" aria-hidden="true"></i>
 					<strong>
 						Shared user sesuai jumlah tamu menginap per kamar
 					</strong>
@@ -166,9 +192,9 @@
 					</a>
 				</section>
 				<!-- 6.7 -->
-					<section>
-						<h5>6</h5>
-						<i class="fa fa-check-square" aria-hidden="true"></i>
+				<section>
+					<h5>6</h5>
+					<i class="fa fa-check-square" aria-hidden="true"></i>
 					<strong>
 						Special speed internet access untuk tamu special
 					</strong>
@@ -178,9 +204,9 @@
 					</a>
 				</section>
 				<!-- 6.8 -->
-					<section>
-						<h5>7</h5>
-						<i class="fa fa-check-square" aria-hidden="true"></i>
+				<section>
+					<h5>7</h5>
+					<i class="fa fa-check-square" aria-hidden="true"></i>
 					<strong>
 						Masa aktif habis otomatis saat tamu checkout hotel
 					</strong>
@@ -190,9 +216,9 @@
 					</a>
 				</section>
 				<!-- 6.9 -->
-					<section>
-						<h5>8</h5>
-						<i class="fa fa-check-square" aria-hidden="true"></i>
+				<section>
+					<h5>8</h5>
+					<i class="fa fa-check-square" aria-hidden="true"></i>
 					<strong>
 						Masa aktif otomatis diperpanjang saat tamu memperpanjang waktu inap sesuai perpanjangan (extend)
 					</strong>
@@ -202,9 +228,9 @@
 					</a>
 				</section>
 				<!-- 6.10 -->
-					<section>
-						<h5>9</h5>
-						<i class="fa fa-check-square" aria-hidden="true"></i>
+				<section>
+					<h5>9</h5>
+					<i class="fa fa-check-square" aria-hidden="true"></i>
 					<strong>
 						Speed internet access costumizable ( Dapat diatur sesuai tipe kamar sesuai kebijakan hotel )
 					</strong>
@@ -214,9 +240,9 @@
 					</a>
 				</section>
 				<!-- 6.11 -->
-					<section>
-						<h5>10</h5>
-						<i class="fa fa-check-square" aria-hidden="true"></i>
+				<section>
+					<h5>10</h5>
+					<i class="fa fa-check-square" aria-hidden="true"></i>
 					<strong>
 						Walled Garden Support
 
@@ -239,20 +265,31 @@
 					<li class="fragment fade-down">Lebih efektif dan efisien</li>
 					<li class="fragment fade-down">Memudahkan tamu untuk login dengan QR code</li>
 					<li class="fragment fade-down">Keamanan lebih baik karena menggunakan username dan password dengan data pribadi</li>
-					<li class="fragment fade-down">Tidak lagi membutuhkan teknisi (freelance) untuk  generate voucher</li>
+					<li class="fragment fade-down">Tidak lagi membutuhkan teknisi (freelance) untuk generate voucher</li>
 				</ol>
 			</section>
 
 			<!-- 9 / lastest -->
-			<section>
+			<section id="last-slide">
 				<h1 style="display:inline; margin-right:20px;">Thanks</h1>
 				<img src="img/logo-stmik.png" alt="Logo STMIK BG" style="width: 100px; height: 100px; margin:0px;">
-				<textarea style="width: 100%; font-size: 20px; background-color: lightblue; padding: 10px; border-radius: 10px 10px;" name="masukkan" rows="6" cols="100" placeholder="Note"></textarea>
+
+				<!-- add item form -->
+				<center><input type="text" style="display: block; width: 90%; font-size: 20px; background-color: lightblue; padding: 10px; border-radius: 10px 10px;" id="item" placeholder="Add note (Need Connection to add note)" title="Need Connection to add note"></input></center>
+				<button type="submit" onclick="addItem()" id="addRevisi" style="border-radius: 5px 5px; font-size: 20px; font-weight: bold; background-color: #0099AA; color: lightblue;">Submit</button>
+
+				<!-- id peneliti -->
 				<div style="font-size:24px; font-weight:bold;">
 					<div class="fragment fade-left" data-autoslide="500" data-fragment-index="3">MUHAMMAD ARFANI HIDAYAT</div>
 					<div class="fragment fade-down" data-autoslide="500" data-fragment-index="2">NIM : 1610550015</div>
 					<div class="fragment fade-up" data-fragment-index="4">S1 TEKNIK INFORMATIKA</div>
 					<div class="fragment grow" data-autoslide="5000" data-fragment-index="1" style="color:#09a;">TEKNIK KOMPUTER & JARINGAN</div>
+				</div>
+				<br /><br /><br /><br />
+				<br /><br /><br /><br />
+				<div id="box-list" style="height: 35%; width: 100%; position: fixed; bottom: 10px; background-color: rgba(150, 150, 150, 0.4); overflow-y: auto; overflow-x: hidden; border-radius: 10px 10px; color:white;">
+					<ol id="list-revisi" style="word-wrap: break-word; width:90%; text-align: left; font-size: 24px;">
+					</ol>
 				</div>
 			</section>
 			<!-- End -->
@@ -324,6 +361,59 @@
 			}
 			// , backgroundTransition: 'zoom'
 		});
+	</script>
+
+	<script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyBp1WLE2vgaq1NhDN4Kv1vqTVaMOiUHx-c",
+			authDomain: "note-skripsi.firebaseapp.com",
+			databaseURL: "https://note-skripsi.firebaseio.com",
+			projectId: "note-skripsi",
+			storageBucket: "note-skripsi.appspot.com",
+			messagingSenderId: "614706518730"
+		};
+		firebase.initializeApp(config);
+
+		const db = firebase.database()
+		const note = db.ref('revisi')
+
+		//events
+		note.on('value', showData, showError)
+		// ================== end events
+
+		function showError(err) {
+			console.log(err)
+		}
+
+
+		function showData(items) {
+			let no = 1
+			let ol = document.getElementById('list-revisi')
+			let content = ''
+
+			items.forEach(function(child) {
+				content += '<li>' + child.val().item + '</li>'
+			})
+
+			ol.innerHTML = content
+		}
+
+		function addItem() {
+			let data = document.getElementById('item')
+			note.push({
+				item: data.value
+			})
+			data.value = ''
+		}
+
+		document.querySelector('#last-slide').addEventListener('keypress', function (e) {
+	    let key = e.which || e.keyCode;
+	    if (key === 13) { // 13 is enter
+	      addItem()
+	    }
+		})
 	</script>
 </body>
 
