@@ -1,4 +1,4 @@
-# Slides for Skripsi presentation
+# Presentation Slides using reveal.js
 
 - MUHAMMAD ARFANI HIDAYAT
 - 1610550015
